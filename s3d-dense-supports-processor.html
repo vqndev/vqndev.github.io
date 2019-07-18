@@ -18,10 +18,22 @@
         </div>
       <form>
         <div class="form-group">
-          <label for="newSpeed">New Speed: <input type="text" id="newSpeed" class="form-control" value="240"></label>
+          <label for="newSpeed">New Speed: </label>
+          
+          <div class="input-group" style="width: 150px">
+            <input type="text" id="newSpeed" class="form-control" value="240">
+            <div class="input-group-append">
+                <div class="input-group-text">mm/s</div>
+              </div>
+          </div>
         </div>
         <div class="form-group">
-          <label for="fileinput">Original GCode File: <input type="file" class="form-control" id="fileinput" /></label>
+          <label for="fileinput">Original GCode File: </label>
+          <div class="custom-file" style="width: 350px; display:block">
+              <input type="file" class="custom-file-input" id="fileinput" style="border: none" />
+              <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+          </div>
+          
         </div>
         <button type="button" id="startOver" class="btn btn-sm btn-secondary">Start Over</button>
       </form>
